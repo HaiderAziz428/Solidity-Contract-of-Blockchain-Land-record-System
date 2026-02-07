@@ -24,6 +24,7 @@ contract LandRegistry is ERC721, Ownable {
     enum LandType { RESIDENTIAL, AGRICULTURAL, COMMERCIAL }
     enum LandStatus { ACTIVE, PENDING_INHERITANCE, LOCKED_DISPUTE }
 
+
     /// @dev CHANGED: Stores hashes instead of raw strings for privacy
     struct LandRecord {
         address currentOwner;   
